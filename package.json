@@ -1,0 +1,34 @@
+{
+  "name": "site-autofix",
+  "version": "1.0.0",
+  "description": "CLI tool that detects and auto-fixes broken links, generates redirect configs, and monitors for 500 errors",
+  "main": "dist/cli.js",
+  "bin": {
+    "site-autofix": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "broken-links",
+    "redirects",
+    "health-monitor",
+    "cli",
+    "seo",
+    "site-maintenance"
+  ],
+  "author": "Eli Benveniste",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "node-fetch": "^3.3.2",
+    "playwright": "^1.49.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}
